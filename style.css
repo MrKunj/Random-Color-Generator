@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans: wght@400; 500; 600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open Sans', 'sans-serif ';
+}
+
+body {
+background: #E3F2FD;
+}
+
+.container .color{
+    list-style: none;
+    margin: 13px;
+    padding: 7px;
+    text-align: center;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(52, 87, 220, 0.08);
+    transition: transform 0.3s ease;
+}
+.container .color:action{
+    transform: scale(0.95);
+}
+
+/* Splitting the container as per the requirement */
+
+.container{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color .rect-box{
+    width: 185px;
+    height: 188px;
+    border-radius: 5px;
+    background: #8A6CFF; 
+}
+
+.color:hover .rect-box{
+    filter: brightness(106%);
+    
+} 
+
+.color .hax-value{
+    display: block;
+    margin: 12px 0 8px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.refresh-btn {
+    outline:none;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 12px 20px;
+    background: #8A6CFF;
+    border: 2px solid #fff;
+    box-shadow: 0 15px 25px rgba(52, 87, 220, 0.2);
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    transform: translate(-50%);
+}
